@@ -8,33 +8,33 @@ import type { ProjectPreview } from "../../types";
 
 export default [
   {
-    title: "Social Service UCP",
+    title: "Servicio Social UCP",
     slug: "serviciosocial_ucp",
     thumbnail: thumbnailPokedex,
-    description: "University Social Service Management",
+    description: "Gestión de Servicio Social Universitario",
   },
   {
     title: "Market UCP",
     slug: "market_ucp",
     thumbnail: thumbnailQuibbo,
-    description: "UCP Student Marketplace Platform",
+    description: "Marketplace Estudiantil de la UCP",
   },
   {
     title: "Adi Estilos",
     slug: "adi_estilos",
     thumbnail: thumbnailSharkie,
-    description: "Stylist Scheduling & Booking Platform",
+    description: "Gestión de Turnos y Estilistas",
   },
   {
     title: "MoonDark",
     slug: "moondark",
     thumbnail: thumbnailCubeWar,
-    description: "High-fidelity dark mode interactive project",
+    description: "Experiencia Interactiva Moon Dark",
   },
   {
     title: "Paticas",
     slug: "paticas",
     thumbnail: thumbnailStreakon,
-    description: "Pet Adoption & Care Mobile App",
+    description: "Plataforma de Adopción de Mascotas",
   },
 ] as const satisfies ProjectPreview[];
