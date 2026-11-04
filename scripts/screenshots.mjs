@@ -13,6 +13,8 @@ const SITES = [
   { id: "mathe_rest", url: "https://mathe-rest.vercel.app", wait: 5000 },
   { id: "atacknimal", url: "https://atacknimal.vercel.app", wait: 8000 },
   { id: "forja_temple", url: "https://ley-enfriamiento.vercel.app", wait: 5000 },
+  { id: "formacion360", url: "https://formation360.vercel.app", wait: 6000 },
+  { id: "servicio_social", url: "https://ucp-servicio-social.vercel.app", wait: 6000 },
 ];
 
 await mkdir(OUT, { recursive: true });
