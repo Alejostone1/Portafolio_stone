@@ -1,4 +1,4 @@
-import img0 from "../../../assets/images/projects/reptilkombat-cover.webp";
+import show from "../../../assets/images/projects/reptilkombat-showcase.webp";
 
 import type { ProjectContent } from "../../types";
 
@@ -18,6 +18,15 @@ export default {
     {
       "type": "media",
       "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Vista en computador y celular",
+        "caption": "Vista en computador y celular"
+      }
+    },
+    {
+      "type": "media",
+      "props": {
         "type": "embed",
         "src": "https://reptilkombat.vercel.app",
         "caption": "Jugar en vivo",
@@ -34,15 +43,6 @@ export default {
           "Combate multijugador en tiempo real",
           "Sistema de balance del juego"
         ]
-      }
-    },
-    {
-      "type": "media",
-      "props": {
-        "type": "image",
-        "src": img0,
-        "alt": "Reptil Kombat",
-        "caption": "Reptil Kombat"
       }
     }
   ]

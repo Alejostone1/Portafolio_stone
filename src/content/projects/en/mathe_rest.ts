@@ -1,4 +1,5 @@
-import img0 from "../../../assets/images/projects/mathe_rest-cover.webp";
+import show from "../../../assets/images/projects/mathe_rest-showcase.webp";
+import seccion from "../../../assets/images/projects/mathe_rest-seccion.webp";
 
 import type { ProjectContent } from "../../types";
 
@@ -14,6 +15,15 @@ export default {
   "videoBorder": true,
   "description": "Web math assistant, final project for Differential and Integral Calculus. It parses an expression, detects the solving method automatically and explains the derivation or integration step by step.",
   "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Desktop and mobile view",
+        "caption": "Desktop and mobile view"
+      }
+    },
     {
       "type": "media",
       "props": {
@@ -39,9 +49,9 @@ export default {
       "type": "media",
       "props": {
         "type": "image",
-        "src": img0,
-        "alt": "MatheRest",
-        "caption": "MatheRest"
+        "src": seccion,
+        "alt": "Stack & math coverage",
+        "caption": "Stack & math coverage"
       }
     }
   ]

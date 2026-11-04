@@ -1,3 +1,5 @@
+import show from "../../../assets/images/projects/forja_temple-showcase.webp";
+import seccion from "../../../assets/images/projects/forja_temple-seccion.webp";
 import img0 from "../../../assets/images/projects/forja-inicio.webp";
 import img1 from "../../../assets/images/projects/forja-experimentos.webp";
 import img2 from "../../../assets/images/projects/forja-grafica.webp";
@@ -16,8 +18,17 @@ export default {
   "live": "https://ley-enfriamiento.vercel.app",
   "source": "https://github.com/Alejostone1/Quizz_Ley_Enfriamiento",
   "videoBorder": true,
-  "description": "Laboratorio virtual de transferencia de calor: eliges el metal y el medio, y observas cómo la pieza pierde o gana calor.<br/><br/>El simulador calcula la constante <b>k</b> a partir de propiedades físicas reales y desarrolla la matemática paso a paso, con gráficas, análisis y escenarios como horno y criogenia.",
+  "description": "Laboratorio virtual de transferencia de calor: eliges el metal y el medio, y observas cómo la pieza pierde o gana calor.<br/><br/>El simulador calcula la constante <b>k</b> a partir de propiedades físicas reales y desarrolla la matemática paso a paso, con gráficas, análisis y escenarios como horno y criogenia.<br/><br/>Proyecto académico desarrollado en equipo con Daniel Colorado y Sebastián Patiño.",
   "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Vista en computador y celular",
+        "caption": "Vista en computador y celular"
+      }
+    },
     {
       "type": "media",
       "props": {
@@ -37,6 +48,15 @@ export default {
           "Gráficas de temperatura en el tiempo",
           "Escenarios de horno, temple y criogenia"
         ]
+      }
+    },
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": seccion,
+        "alt": "Experimentos en paralelo",
+        "caption": "Experimentos en paralelo"
       }
     },
     {

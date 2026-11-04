@@ -1,4 +1,5 @@
-import img0 from "../../../assets/images/projects/turnos_control-cover.webp";
+import show from "../../../assets/images/projects/turnos_control-showcase.webp";
+import seccion from "../../../assets/images/projects/turnos_control-seccion.webp";
 
 import type { ProjectContent } from "../../types";
 
@@ -16,6 +17,15 @@ export default {
   "videoBorder": true,
   "description": "Multi-tenant SaaS platform to schedule work shifts and calculate surcharges and overtime under current Colombian labor law (CST, Decree 1072/2015, Law 2101/2021 and Law 2466/2025).<br/><br/>It solves a real problem: manual errors when classifying night, Sunday, holiday and past-midnight hours.",
   "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Desktop and mobile view",
+        "caption": "Desktop and mobile view"
+      }
+    },
     {
       "type": "media",
       "props": {
@@ -41,9 +51,9 @@ export default {
       "type": "media",
       "props": {
         "type": "image",
-        "src": img0,
-        "alt": "TurnosControl",
-        "caption": "TurnosControl"
+        "src": seccion,
+        "alt": "Legal framework",
+        "caption": "Legal framework"
       }
     }
   ]

@@ -1,4 +1,5 @@
-import img0 from "../../../assets/images/projects/turnos_control-cover.webp";
+import show from "../../../assets/images/projects/turnos_control-showcase.webp";
+import seccion from "../../../assets/images/projects/turnos_control-seccion.webp";
 
 import type { ProjectContent } from "../../types";
 
@@ -16,6 +17,15 @@ export default {
   "videoBorder": true,
   "description": "Plataforma SaaS multi-empresa para programar turnos laborales y liquidar recargos y horas extra conforme a la normativa colombiana vigente (CST, Decreto 1072 de 2015, Ley 2101 de 2021 y Ley 2466 de 2025).<br/><br/>Resuelve un problema real: los errores manuales al clasificar horas nocturnas, dominicales, festivas y cruces de medianoche.",
   "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Vista en computador y celular",
+        "caption": "Vista en computador y celular"
+      }
+    },
     {
       "type": "media",
       "props": {
@@ -41,9 +51,9 @@ export default {
       "type": "media",
       "props": {
         "type": "image",
-        "src": img0,
-        "alt": "TurnosControl",
-        "caption": "TurnosControl"
+        "src": seccion,
+        "alt": "Marco normativo",
+        "caption": "Marco normativo"
       }
     }
   ]

@@ -1,4 +1,4 @@
-import img0 from "../../../assets/images/projects/reptilkombat-cover.webp";
+import show from "../../../assets/images/projects/reptilkombat-showcase.webp";
 
 import type { ProjectContent } from "../../types";
 
@@ -18,6 +18,15 @@ export default {
     {
       "type": "media",
       "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Desktop and mobile view",
+        "caption": "Desktop and mobile view"
+      }
+    },
+    {
+      "type": "media",
+      "props": {
         "type": "embed",
         "src": "https://reptilkombat.vercel.app",
         "caption": "Play live",
@@ -34,15 +43,6 @@ export default {
           "Real-time multiplayer combat",
           "Game balance system"
         ]
-      }
-    },
-    {
-      "type": "media",
-      "props": {
-        "type": "image",
-        "src": img0,
-        "alt": "Reptil Kombat",
-        "caption": "Reptil Kombat"
       }
     }
   ]

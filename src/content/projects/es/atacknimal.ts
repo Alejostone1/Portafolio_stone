@@ -1,3 +1,4 @@
+import show from "../../../assets/images/projects/atacknimal-showcase.webp";
 import img0 from "../../../assets/images/projects/atacknimal-portada.webp";
 import img1 from "../../../assets/images/projects/atacknimal-paneles.webp";
 import img2 from "../../../assets/images/projects/atacknimal-duelo.webp";
@@ -19,6 +20,15 @@ export default {
   "videoBorder": true,
   "description": "Juego de cartas de animales por turnos donde <i>el instinto decide y la estrategia gana</i>. Cada animal tiene estadísticas y habilidades propias, y las partidas se juegan en tableros temáticos.<br/><br/>Se desarrolló por fases documentadas: análisis, diseño del juego (GDD), arte conceptual, interfaz y motor de combate.",
   "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Vista en computador y celular",
+        "caption": "Vista en computador y celular"
+      }
+    },
     {
       "type": "media",
       "props": {

@@ -41,3 +41,13 @@ Cada proyecto puede mostrar `media` de tipo `image`, `video` o `embed` (vista pr
 ## Despliegue
 
 Está conectado a Vercel: cada push a `main` se publica automáticamente en https://alejostone.vercel.app.
+
+## Créditos y atribución
+
+Este portafolio está construido sobre **portfolio-2025**, creado y diseñado por **David Heckhoff**. La escena 3D, el personaje, el diseño y la base del código son de su autoría; el contenido, los proyectos y los textos son míos.
+
+- Portafolio original: https://david-hckh.com
+- Repositorio original: https://github.com/davidhckh/portfolio-2025
+- Uso personal y educativo según [license.md](license.md). Se mantiene el crédito visible en el pie de página.
+
+Música producida por [HM Surf](https://soundcloud.com/hmsurf).

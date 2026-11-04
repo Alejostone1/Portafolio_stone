@@ -1,4 +1,5 @@
-import img0 from "../../../assets/images/projects/adi_estilos-cover.webp";
+import show from "../../../assets/images/projects/adi_estilos-showcase.webp";
+import seccion from "../../../assets/images/projects/adi_estilos-seccion.webp";
 
 import type { ProjectContent } from "../../types";
 
@@ -17,6 +18,15 @@ export default {
   "videoBorder": true,
   "description": "Admin web system for a real clothing store. It centralizes inventory with size and color variants, sales, supplier purchases, customer credit and financial reports.<br/><br/>It features an interactive KPI dashboard, status control, role-based user management and dynamic reports with data visualization.",
   "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Desktop and mobile view",
+        "caption": "Desktop and mobile view"
+      }
+    },
     {
       "type": "media",
       "props": {
@@ -42,9 +52,9 @@ export default {
       "type": "media",
       "props": {
         "type": "image",
-        "src": img0,
-        "alt": "Adi Estilos",
-        "caption": "Adi Estilos"
+        "src": seccion,
+        "alt": "Brand philosophy",
+        "caption": "Brand philosophy"
       }
     }
   ]

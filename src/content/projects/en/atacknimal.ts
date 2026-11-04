@@ -1,3 +1,4 @@
+import show from "../../../assets/images/projects/atacknimal-showcase.webp";
 import img0 from "../../../assets/images/projects/atacknimal-portada.webp";
 import img1 from "../../../assets/images/projects/atacknimal-paneles.webp";
 import img2 from "../../../assets/images/projects/atacknimal-duelo.webp";
@@ -19,6 +20,15 @@ export default {
   "videoBorder": true,
   "description": "Turn-based animal card game where <i>instinct decides and strategy wins</i>. Every animal has its own stats and abilities, and matches are played on themed boards.<br/><br/>It was built in documented phases: analysis, game design document (GDD), concept art, UI and combat engine.",
   "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Desktop and mobile view",
+        "caption": "Desktop and mobile view"
+      }
+    },
     {
       "type": "media",
       "props": {

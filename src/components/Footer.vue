@@ -69,6 +69,22 @@ const { withSocial = true } = defineProps<Props>();
         </div>
       </div>
       <div class="footer-credits">
+        <!-- Diseño y código base: portfolio-2025 de David Heckhoff (https://david-hckh.com). No retirar este crédito (ver license.md). -->
+        <div class="footer-credits-built">
+          <p>
+            {{ t("original-concept-by") }}
+          </p>
+          <Clickable renderAs="div">
+            <Link
+              href="https://david-hckh.com"
+              class="footer-link children-unclickable"
+              external
+              data-cursor="circle-white"
+              data-hoversound="hover"
+              >David Heckhoff</Link
+            >
+          </Clickable>
+        </div>
         <div class="footer-credits-music">
           <p>
             {{ t("music-produced-by") }}
@@ -170,6 +186,7 @@ const { withSocial = true } = defineProps<Props>();
     width: 100%;
     font-size: var(--font-size-sm);
 
+    &-built,
     &-music {
       display: flex;
       flex-direction: row;

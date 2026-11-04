@@ -1,4 +1,5 @@
-import img0 from "../../../assets/images/projects/electrolab3d-cover.webp";
+import show from "../../../assets/images/projects/electrolab3d-showcase.webp";
+import seccion from "../../../assets/images/projects/electrolab3d-seccion.webp";
 
 import type { ProjectContent } from "../../types";
 
@@ -16,6 +17,15 @@ export default {
   "videoBorder": true,
   "description": "Simulador 3D interactivo de un circuito RLC en serie. Resuelve en tiempo real la ecuación diferencial de segundo orden <b>L q'' + R q' + q/C = E(t)</b> con el método de Runge-Kutta de orden 4 y la convierte en algo que se puede ver y manipular.<br/><br/>Muestra el flujo de cargas, los regímenes de amortiguamiento, un osciloscopio multicanal y el espacio de estados, para conectar la matemática con el comportamiento físico del circuito.",
   "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Vista en computador y celular",
+        "caption": "Vista en computador y celular"
+      }
+    },
     {
       "type": "media",
       "props": {
@@ -41,9 +51,9 @@ export default {
       "type": "media",
       "props": {
         "type": "image",
-        "src": img0,
-        "alt": "ElectroLab 3D",
-        "caption": "ElectroLab 3D"
+        "src": seccion,
+        "alt": "Funciones del laboratorio",
+        "caption": "Funciones del laboratorio"
       }
     }
   ]

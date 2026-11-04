@@ -1,4 +1,5 @@
-import img0 from "../../../assets/images/projects/mathe_rest-cover.webp";
+import show from "../../../assets/images/projects/mathe_rest-showcase.webp";
+import seccion from "../../../assets/images/projects/mathe_rest-seccion.webp";
 
 import type { ProjectContent } from "../../types";
 
@@ -14,6 +15,15 @@ export default {
   "videoBorder": true,
   "description": "Asistente matemático web, trabajo final de Cálculo Diferencial e Integral. Analiza una expresión, detecta automáticamente el método de solución y explica paso a paso la derivación o integración.",
   "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Vista en computador y celular",
+        "caption": "Vista en computador y celular"
+      }
+    },
     {
       "type": "media",
       "props": {
@@ -39,9 +49,9 @@ export default {
       "type": "media",
       "props": {
         "type": "image",
-        "src": img0,
-        "alt": "MatheRest",
-        "caption": "MatheRest"
+        "src": seccion,
+        "alt": "Stack y cobertura matemática",
+        "caption": "Stack y cobertura matemática"
       }
     }
   ]

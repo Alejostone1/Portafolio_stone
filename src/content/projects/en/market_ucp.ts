@@ -1,4 +1,5 @@
-import img0 from "../../../assets/images/projects/market_ucp-cover.webp";
+import show from "../../../assets/images/projects/market_ucp-showcase.webp";
+import seccion from "../../../assets/images/projects/market_ucp-seccion.webp";
 
 import type { ProjectContent } from "../../types";
 
@@ -17,6 +18,15 @@ export default {
   "videoBorder": true,
   "description": "Digital commerce platform for the Universidad Católica de Pereira community: students, faculty and staff can post, buy, sell and trade within campus.<br/><br/>It includes user roles, real-time buyer-seller chat, favorites, listing reports and an admin panel with user management.",
   "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Desktop and mobile view",
+        "caption": "Desktop and mobile view"
+      }
+    },
     {
       "type": "media",
       "props": {
@@ -42,9 +52,9 @@ export default {
       "type": "media",
       "props": {
         "type": "image",
-        "src": img0,
-        "alt": "Market UCP",
-        "caption": "Market UCP"
+        "src": seccion,
+        "alt": "Featured listings",
+        "caption": "Featured listings"
       }
     }
   ]

@@ -25,5 +25,6 @@
   "source-code": "Código Fuente",
   "switch-to-project": "Cambiar al proyecto {project}",
   "version": "Versión",
-  "view-project": "Ver proyecto"
+  "view-project": "Ver proyecto",
+  "original-concept-by": "Concepto y diseño original de"
 }

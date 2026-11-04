@@ -1,4 +1,5 @@
-import img0 from "../../../assets/images/projects/adi_estilos-cover.webp";
+import show from "../../../assets/images/projects/adi_estilos-showcase.webp";
+import seccion from "../../../assets/images/projects/adi_estilos-seccion.webp";
 
 import type { ProjectContent } from "../../types";
 
@@ -17,6 +18,15 @@ export default {
   "videoBorder": true,
   "description": "Sistema web administrativo para una tienda de ropa real. Centraliza inventario con variantes de talla y color, ventas, compras a proveedores, créditos de clientes y reportes financieros.<br/><br/>Tiene un dashboard interactivo con indicadores, control de estados, gestión de usuarios por rol y reportes dinámicos con visualización de datos.",
   "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": show,
+        "alt": "Vista en computador y celular",
+        "caption": "Vista en computador y celular"
+      }
+    },
     {
       "type": "media",
       "props": {
@@ -42,9 +52,9 @@ export default {
       "type": "media",
       "props": {
         "type": "image",
-        "src": img0,
-        "alt": "Adi Estilos",
-        "caption": "Adi Estilos"
+        "src": seccion,
+        "alt": "Filosofía de la marca",
+        "caption": "Filosofía de la marca"
       }
     }
   ]
