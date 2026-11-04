@@ -30,7 +30,7 @@ jobs:
       - name: Tomar capturas
         run: node scripts/screenshots.mjs
         env:
-          SOLO: ${{ github.event.inputs.solo || 'servicio_social' }}
+          SOLO: ${{ github.event.inputs.solo }}
       - name: Guardar capturas en el repo
         run: |
           git config user.name "github-actions[bot]"

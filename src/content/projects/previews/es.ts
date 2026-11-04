@@ -1,3 +1,5 @@
+import t_formacion360 from "../../../assets/thumbnails/formacion360.webp";
+import t_servicio_social from "../../../assets/thumbnails/servicio_social.webp";
 import t_electrolab3d from "../../../assets/thumbnails/electrolab3d.webp";
 import t_market_ucp from "../../../assets/thumbnails/market_ucp.webp";
 import t_atacknimal from "../../../assets/thumbnails/atacknimal.webp";
@@ -15,6 +17,8 @@ export default [
   { title: "Market UCP", slug: "market_ucp", thumbnail: t_market_ucp, description: "Marketplace de la comunidad UCP" },
   { title: "Atacknimal", slug: "atacknimal", thumbnail: t_atacknimal, description: "Juego táctico de cartas de animales" },
   { title: "Adi Estilos", slug: "adi_estilos", thumbnail: t_adi_estilos, description: "Gestión integral para tienda de ropa" },
+  { title: "Formaci\u00f3n 360", slug: "formacion360", thumbnail: t_formacion360, description: "Plataforma de cursos en video con certificados" },
+  { title: "Servicio Social UCP", slug: "servicio_social", thumbnail: t_servicio_social, description: "Gestión del servicio social universitario" },
   { title: "Forja & Temple", slug: "forja_temple", thumbnail: t_forja_temple, description: "Laboratorio de la Ley de Enfriamiento de Newton" },
   { title: "TurnosControl", slug: "turnos_control", thumbnail: t_turnos_control, description: "SaaS de turnos y nómina colombiana" },
   { title: "Reptil Kombat", slug: "reptilkombat", thumbnail: t_reptilkombat, description: "Juego de cartas multijugador en vivo" },
