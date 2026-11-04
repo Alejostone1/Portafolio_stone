@@ -17,12 +17,16 @@ const SITES = [
   { id: "servicio_social", url: "https://ucp-servicio-social.vercel.app", wait: 6000 },
 ];
 
+// SOLO=id1,id2 limita las capturas a esos proyectos
+const SOLO = (process.env.SOLO || "").split(",").filter(Boolean);
+const LISTA = SOLO.length ? SITES.filter((s) => SOLO.includes(s.id)) : SITES;
+
 await mkdir(OUT, { recursive: true });
 const browser = await chromium.launch({
   args: ["--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"],
 });
 
-for (const s of SITES) {
+for (const s of LISTA) {
   for (const [kind, viewport, scale] of [
     ["desktop", { width: 1600, height: 900 }, 1],
     ["mobile", { width: 390, height: 844 }, 2],
