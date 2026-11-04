@@ -7,7 +7,7 @@ export default {
   title: "Market UCP",
   theme: "dark",
   tags: ["html", "javascript", "css", "mysql", "bootstrap"],
-  live: "https://github.com/Alejostone1/Market_ucp",
+  live: "https://market-ucp.vercel.app",
   source: "https://github.com/Alejostone1/Market_ucp",
   videoBorder: true,
   description:

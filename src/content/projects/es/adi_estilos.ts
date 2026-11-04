@@ -8,8 +8,8 @@ export default {
   title: "Adi Estilos",
   theme: "dark",
   tags: ["nodejs", "express", "mongodb", "css", "ejs"],
-  live: "https://github.com/Alejostone1/Adi_Estilos",
-  source: "https://github.com/Alejostone1/Adi_Estilos",
+  live: "https://adiestilos-full.vercel.app",
+  source: "https://github.com/Alejostone1/Adiestilos_Full",
   videoBorder: true,
   description:
     "Plataforma completa de administración y marketing digital para peluquerías y estilistas independientes.<br/><br/>Permite a los profesionales de la belleza gestionar sus agendas de turnos, llevar un registro detallado de clientes, promocionar servicios y agilizar la comunicación de manera moderna.",

@@ -8,8 +8,8 @@ export default {
   title: "MoonDark & Luna",
   theme: "dark",
   tags: ["javascript", "html", "css", "dark-mode"],
-  live: "https://github.com/Alejostone1/MoonDark",
-  source: "https://github.com/Alejostone1/MoonDark",
+  live: "https://github.com/Alejostone1",
+  source: "https://github.com/Alejostone1",
   videoBorder: true,
   description:
     "The 'Moon Universe' encompasses high-fidelity, interactive, dark-mode web projects with glowing neon styles such as **MoonDark**, **ProyectoFinalMoon**, and **cafe-luna-oscura**.<br/><br/>It focuses on creating immersive web layouts with extremely smooth transitions, interactive space/particle effects, and premium animations inspired by the moon and cosmos.",

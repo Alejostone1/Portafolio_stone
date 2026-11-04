@@ -8,8 +8,8 @@ export default {
   title: "Adi Estilos",
   theme: "dark",
   tags: ["nodejs", "express", "mongodb", "css", "ejs"],
-  live: "https://github.com/Alejostone1/Adi_Estilos",
-  source: "https://github.com/Alejostone1/Adi_Estilos",
+  live: "https://adiestilos-full.vercel.app",
+  source: "https://github.com/Alejostone1/Adiestilos_Full",
   videoBorder: true,
   description:
     "A full business management and digital booking platform built for independent hair stylists and beauty salons.<br/><br/>It enables beauty professionals to manage appointments, keep detailed customer records, promote special salon services, and improve business communication efficiently.",
