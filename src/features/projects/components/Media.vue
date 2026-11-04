@@ -9,7 +9,7 @@ const mediaContentRef = ref<HTMLDivElement | null>(null);
 const isMounted = ref(false);
 
 export interface Props {
-  type: "image" | "video";
+  type: "image" | "video" | "embed";
   src: string;
   alt?: string;
   caption?: string;
@@ -64,6 +64,18 @@ onMounted(async () => {
         class="project-media-image"
         ref="mediaRef"
       />
+      <div v-else-if="props.type === 'embed'" class="project-media-embed" ref="mediaRef">
+        <iframe
+          :src="props.src"
+          :title="props.alt || props.caption || 'Demo en vivo'"
+          loading="lazy"
+          class="project-media-embed-frame"
+          tabindex="-1"
+        ></iframe>
+        <a :href="props.src" target="_blank" rel="noopener noreferrer" class="project-media-embed-link">
+          <span>{{ props.alt || "Abrir demo en vivo" }} ↗</span>
+        </a>
+      </div>
       <video
         v-else
         :src="props.src"
@@ -158,6 +170,49 @@ onMounted(async () => {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  &-embed {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      border: 0;
+      transform: scale(0.5);
+      transform-origin: 0 0;
+      pointer-events: none;
+      background: white;
+    }
+
+    &-link {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: var(--space-md);
+      text-decoration: none;
+
+      span {
+        background: var(--color-background-400);
+        color: var(--color-text-400);
+        font-weight: 700;
+        font-size: var(--font-size-sm);
+        padding: var(--space-xxs) var(--space-sm);
+        border-radius: var(--radius-md);
+        transition: transform 0.2s ease;
+      }
+
+      &:hover span {
+        transform: translateY(-3px);
+      }
+    }
   }
 
   &-video {

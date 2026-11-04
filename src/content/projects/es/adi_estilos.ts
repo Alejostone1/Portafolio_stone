@@ -1,44 +1,51 @@
-import videoSharkie from "../../../assets/videos/sharkie.mp4";
-import sharkie0 from "../../../assets/images/projects/sharkie/sharkie-0.webp";
-import sharkie1 from "../../../assets/images/projects/sharkie/sharkie-1.webp";
+import img0 from "../../../assets/images/projects/adi_estilos-cover.webp";
 
 import type { ProjectContent } from "../../types";
 
 export default {
-  title: "Adi Estilos",
-  theme: "dark",
-  tags: ["nodejs", "express", "mongodb", "css", "ejs"],
-  live: "https://adiestilos-full.vercel.app",
-  source: "https://github.com/Alejostone1/Adiestilos_Full",
-  videoBorder: true,
-  description:
-    "Plataforma completa de administración y marketing digital para peluquerías y estilistas independientes.<br/><br/>Permite a los profesionales de la belleza gestionar sus agendas de turnos, llevar un registro detallado de clientes, promocionar servicios y agilizar la comunicación de manera moderna.",
-  components: [
-    {
-      type: "media",
-      props: {
-        type: "video",
-        src: videoSharkie,
-        caption: "Adi Estilos Plataforma",
-      },
-    },
-    {
-      type: "media",
-      props: {
-        type: "image",
-        src: sharkie0,
-        alt: "Calendario de Turnos",
-        caption: "Gestor Visual de Turnos",
-      },
-    },
-    {
-      type: "media",
-      props: {
-        type: "image",
-        src: sharkie1,
-        alt: "Perfil del Estilista",
-        caption: "Panel de Personalización del Salón",
-      },
-    },
+  "title": "Adi Estilos",
+  "theme": "dark",
+  "tags": [
+    "react",
+    "vite",
+    "nodejs",
+    "express",
+    "prisma"
   ],
+  "live": "https://adiestilos-full.vercel.app",
+  "source": "https://github.com/Alejostone1/Adiestilos_Full",
+  "videoBorder": true,
+  "description": "Sistema web administrativo para una tienda de ropa real. Centraliza inventario con variantes de talla y color, ventas, compras a proveedores, créditos de clientes y reportes financieros.<br/><br/>Tiene un dashboard interactivo con indicadores, control de estados, gestión de usuarios por rol y reportes dinámicos con visualización de datos.",
+  "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "embed",
+        "src": "https://adiestilos-full.vercel.app",
+        "caption": "Demo en vivo",
+        "alt": "Abrir demo en vivo"
+      }
+    },
+    {
+      "type": "list",
+      "props": {
+        "title": "Características",
+        "items": [
+          "Inventario con variantes de producto",
+          "Ventas, compras y créditos con abonos",
+          "Dashboard y reportes financieros",
+          "React + Vite, Node.js, Express y Prisma"
+        ]
+      }
+    },
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": img0,
+        "alt": "Adi Estilos",
+        "caption": "Adi Estilos"
+      }
+    }
+  ]
 } as const satisfies ProjectContent;

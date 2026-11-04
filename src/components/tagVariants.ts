@@ -25,7 +25,19 @@ export type TagVariant =
   | "mongodb"
   | "bootstrap"
   | "ejs"
-  | "dark-mode";
+  | "dark-mode"
+  | "typescript"
+  | "prisma"
+  | "vue"
+  | "phaser"
+  | "vite"
+  | "tailwind"
+  | "socketio"
+  | "python"
+  | "webgl"
+  | "rk4"
+  | "jwt"
+  | "java";
 
 export const tagLabels = {
   three: "Three.js",
@@ -55,4 +67,16 @@ export const tagLabels = {
   bootstrap: "Bootstrap",
   ejs: "EJS",
   "dark-mode": "Dark Mode",
+  typescript: "TypeScript",
+  prisma: "Prisma",
+  vue: "Vue",
+  phaser: "Phaser",
+  vite: "Vite",
+  tailwind: "Tailwind CSS",
+  socketio: "Socket.io",
+  python: "Python",
+  webgl: "WebGL",
+  rk4: "RK4",
+  jwt: "JWT",
+  java: "Java",
 } as const satisfies Record<TagVariant, string>;

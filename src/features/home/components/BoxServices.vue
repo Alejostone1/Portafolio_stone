@@ -107,19 +107,19 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
 };
 
 const SERVICES_EN = [
-  { name: "Networks & Telecoms" },
-  { name: "Mobile Development (React Native)" },
-  { name: "Fullstack Web Development" },
-  { name: "Databases (SQL & NoSQL)" },
-  { name: "REST APIs & Microservices" },
+  { name: "Fullstack Web (React, Next.js, Node.js)" },
+  { name: "3D & Interactive Simulations (Three.js)" },
+  { name: "Databases (PostgreSQL, MySQL, Prisma)" },
+  { name: "REST APIs & Real-time (Socket.io)" },
+  { name: "Networks & Telecommunications" },
 ] as const satisfies { name: string }[];
 
 const SERVICES_ES = [
-  { name: "Redes & Telecomunicaciones" },
-  { name: "Desarrollo Móvil (React Native)" },
-  { name: "Desarrollo Web Fullstack" },
-  { name: "Bases de Datos (SQL & NoSQL)" },
-  { name: "APIs REST & Microservicios" },
+  { name: "Desarrollo Web Fullstack (React, Next.js, Node.js)" },
+  { name: "Simulaciones 3D e Interactivas (Three.js)" },
+  { name: "Bases de Datos (PostgreSQL, MySQL, Prisma)" },
+  { name: "APIs REST y Tiempo Real (Socket.io)" },
+  { name: "Redes y Telecomunicaciones" },
 ] as const satisfies { name: string }[];
 
 const services = computed(() => {

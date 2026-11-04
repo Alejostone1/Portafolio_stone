@@ -1,43 +1,51 @@
-import videoQuibbo from "../../../assets/videos/quibbo.mp4";
-import quibbo0 from "../../../assets/images/projects/quibbo/quibbo-0.webp";
-import quibbo1 from "../../../assets/images/projects/quibbo/quibbo-1.webp";
+import img0 from "../../../assets/images/projects/market_ucp-cover.webp";
+
 import type { ProjectContent } from "../../types";
 
 export default {
-  title: "Market UCP",
-  theme: "dark",
-  tags: ["html", "javascript", "css", "mysql", "bootstrap"],
-  live: "https://market-ucp.vercel.app",
-  source: "https://github.com/Alejostone1/Market_ucp",
-  videoBorder: true,
-  description:
-    "Una aplicación web de mercado (marketplace) interno para estudiantes y personal de la Universidad Católica de Pereira.<br/><br/>Permite a la comunidad publicar artículos para la venta o intercambio, contactar a los vendedores y categorizar productos de manera rápida y segura dentro del entorno educativo.",
-  components: [
-    {
-      type: "media",
-      props: {
-        type: "video",
-        src: videoQuibbo,
-        caption: "Market UCP App",
-      },
-    },
-    {
-      type: "media",
-      props: {
-        type: "image",
-        src: quibbo0,
-        alt: "Catálogo de Productos",
-        caption: "Vista de Productos Disponibles",
-      },
-    },
-    {
-      type: "media",
-      props: {
-        type: "image",
-        src: quibbo1,
-        alt: "Detalle de Artículo",
-        caption: "Vista Detallada del Producto",
-      },
-    },
+  "title": "Market UCP",
+  "theme": "dark",
+  "tags": [
+    "next",
+    "typescript",
+    "prisma",
+    "postgresql",
+    "socketio"
   ],
+  "live": "https://market-ucp.vercel.app",
+  "source": "https://github.com/Alejostone1/Market_ucp",
+  "videoBorder": true,
+  "description": "Plataforma de comercio digital para la comunidad de la Universidad Católica de Pereira: estudiantes, docentes y personal pueden publicar, comprar, vender e intercambiar dentro del campus.<br/><br/>Incluye roles de usuario, chat en tiempo real entre comprador y vendedor, favoritos, reportes de publicaciones y un panel de administración con gestión de usuarios.",
+  "components": [
+    {
+      "type": "media",
+      "props": {
+        "type": "embed",
+        "src": "https://market-ucp.vercel.app",
+        "caption": "Demo en vivo",
+        "alt": "Abrir demo en vivo"
+      }
+    },
+    {
+      "type": "list",
+      "props": {
+        "title": "Características",
+        "items": [
+          "Arquitectura multi-rol (usuario, vendedor, administrador)",
+          "Chat en tiempo real con Socket.io",
+          "Favoritos, reportes y moderación",
+          "Next.js 15, Prisma y PostgreSQL en Neon"
+        ]
+      }
+    },
+    {
+      "type": "media",
+      "props": {
+        "type": "image",
+        "src": img0,
+        "alt": "Market UCP",
+        "caption": "Market UCP"
+      }
+    }
+  ]
 } as const satisfies ProjectContent;
