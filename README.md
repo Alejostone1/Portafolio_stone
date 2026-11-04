@@ -1,26 +1,43 @@
-# Portfolio (2025)
+# Portafolio 3D · Alejandro Piedrahita
 
-Personal portfolio site: project case studies, lightweight 3D and shader demos, bilingual copy (English and German).
+Portafolio personal interactivo en 3D con mis proyectos reales.
 
-Built with **Vue 3**, **TypeScript**, and **Vite**. Motion via **GSAP** and **Lenis**, 3D via **three.js**, audio via **Howler**. GLSL is compiled through **vite-plugin-glsl**.
+**Ver en vivo:** https://alejostone.vercel.app
 
-## Scripts
+Hecho con **Vue 3**, **TypeScript** y **Vite**. La escena 3D usa **three.js** y shaders GLSL, las animaciones **GSAP** y **Lenis**, y el audio **Howler**. Está en español e inglés.
 
-| Command        | Description                          |
-| -------------- | ------------------------------------ |
-| `npm run dev`   | Dev server on port **3000** (`strictPort`) |
-| `npm run build` | `vue-tsc` then production bundle to `dist/` |
-| `npm run preview` | Serve the production build locally |
-| `npm run typecheck` | Typecheck only (`vue-tsc -b`) |
+## Proyectos incluidos
 
-## Content
+| Proyecto | Demo |
+|---|---|
+| ElectroLab 3D | https://electrolab3d.vercel.app |
+| Market UCP | https://market-ucp.vercel.app |
+| Atacknimal | https://atacknimal.vercel.app |
+| Adi Estilos | https://adiestilos-full.vercel.app |
+| Forja & Temple | https://ley-enfriamiento.vercel.app |
+| TurnosControl | https://turnos-control.vercel.app |
+| Reptil Kombat | https://reptilkombat.vercel.app |
+| MatheRest | https://mathe-rest.vercel.app |
+| DesarPro | https://github.com/Alejostone1/Desarpro |
 
-- **Projects**: `src/content/projects/{en,de}/<slug>.ts` — copy, tags, media, links. Slugs must align with `projectIds` in `src/content/projects/index.ts`.
-- **Previews / listing**: `src/content/projects/previews/`.
-- **Tags**: variants and labels live in `src/components/tagVariants.ts` (used by `Tag.vue` and content types).
+## Comandos
 
-## Stack (high level)
+| Comando | Qué hace |
+|---|---|
+| `npm install` | Instala las dependencias |
+| `npm run dev` | Servidor de desarrollo en el puerto **3000** |
+| `npm run build` | Revisa tipos con `vue-tsc` y genera la versión de producción en `dist/` |
+| `npm run preview` | Sirve localmente la versión de producción |
 
-- Vue 3 (`<script setup>`), SCSS with shared mixins (`src/assets/styles/`)
-- i18n helpers under `src/i18n/`
-- WebGL / GLSL under `src/three/` where applicable
+## Cómo agregar o editar un proyecto
+
+1. Agrega el id en `src/content/projects/index.ts` (`projectIds`).
+2. Crea el contenido en `src/content/projects/es/<id>.ts` y `src/content/projects/en/<id>.ts`.
+3. Agrega la tarjeta en `src/content/projects/previews/es.ts` y `previews/en.ts`.
+4. Pon la miniatura en `src/assets/thumbnails/<id>.webp` (1080×608) y las imágenes en `src/assets/images/projects/`.
+
+Cada proyecto puede mostrar `media` de tipo `image`, `video` o `embed` (vista previa en vivo de la demo).
+
+## Despliegue
+
+Está conectado a Vercel: cada push a `main` se publica automáticamente en https://alejostone.vercel.app.
