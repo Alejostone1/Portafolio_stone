@@ -14,6 +14,8 @@ Hecho con **Vue 3**, **TypeScript** y **Vite**. La escena 3D usa **three.js** y 
 | Market UCP | https://market-ucp.vercel.app |
 | Atacknimal | https://atacknimal.vercel.app |
 | Adi Estilos | https://adiestilos-full.vercel.app |
+| Formación 360 | https://formation360.vercel.app |
+| Servicio Social UCP | https://ucp-servicio-social.vercel.app |
 | Forja & Temple | https://ley-enfriamiento.vercel.app |
 | TurnosControl | https://turnos-control.vercel.app |
 | Reptil Kombat | https://reptilkombat.vercel.app |
